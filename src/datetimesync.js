@@ -1,10 +1,10 @@
 let _ts = 0;
-function parseTime(vaule) {
+function parseTime(value) {
   if (typeof value !== 'number') {
     if (typeof value === 'string') {
-      vaule = Date.parse(value);
-    } else if (vaule instanceof Date) {
-      vaule = vaule.getTime();
+      value = Date.parse(value);
+    } else if (value instanceof Date) {
+      value = value.getTime();
     } else {
       throw new Error('value should be number(length=13)');
     }
