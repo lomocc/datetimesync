@@ -18,7 +18,7 @@ module.exports = {
     return _ts + Date.now();
   },
   getTimeDiff(target) {
-    return parseTime(target) - this.getTime();
+    return parseTime(target) - _ts - Date.now();
   },
   setTime(value) {
     _ts = parseTime(value) - Date.now();

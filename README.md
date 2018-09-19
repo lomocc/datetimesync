@@ -1,11 +1,11 @@
-# syncdate
+# DateTimeSync
 
 ```js
-import SyncDate from "syncdate";
+import DateTimeSync from "datetimesync";
 
-SyncDate.setTime(1537320508000);
+DateTimeSync.setTime(1537320508000);
 
 setTimeout(() => {
-  SyncDate.getTime(); // 1537320509000
+  console.log(DateTimeSync.getTime()); // 1537320509000
 }, 1000);
 ```
